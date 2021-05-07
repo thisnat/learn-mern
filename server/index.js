@@ -5,7 +5,7 @@ const db = require('./db');
 
 const personRouter = require('./routes/PersonRouter');
 
-mongoose.connect(db.db,{useNewUrlParser: true,useUnifiedTopology: true}).then(() =>{
+mongoose.connect(db.db,{useNewUrlParser: true,useUnifiedTopology: true,useFindAndModify: false}).then(() =>{
     console.log('db connected');
 },err => {
     console.log(`cant connect db : ${err}`);

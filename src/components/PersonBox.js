@@ -10,13 +10,20 @@ const Personbox = ({data}) => {
         }
     }
 
+    const handleEditBtn = (e) => {
+        e.preventDefault();
+        window.location.href = 'http://localhost:3000/edit-person/' + data._id;
+    }
+
     return (
         <div className="bg-white mx-48 mb-5 p-10 shadow-lg">
-            <p className="text-5xl">{data.name}</p>
+            <button className="mt-5 px-5 py-2 bg-green-600 text-white float-right"
+            onClick={handleEditBtn}>edit</button>
+            <p className="text-5xl">😳 {data.name}</p>
             {
                 haveUsername(data.username)
-                ? <p className="text-4xl">{data.username}</p>
-                : <p className="text-4xl italic">no username kub</p>
+                ? <p className="mt-3 text-4xl">{data.username}</p>
+                : <p className="mt-3 text-4xl italic text-gray-400">no username kub</p>
             }
         </div>
     );

@@ -9,7 +9,7 @@ class Home extends Component {
                         <div className="text-7xl text-center">pp world domination !</div>
                     </div>
                     <div className="pt-10 text-center">
-                        <img className="mx-auto" src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/pepe-the-frog/sticker_9.png?207ef57c8599e443acc1f0b0ff6723c4&d=200x200"/>
+                        <img className="mx-auto" alt="not me lol" src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/pepe-the-frog/sticker_9.png?207ef57c8599e443acc1f0b0ff6723c4&d=200x200"/>
                         <div className="text-7xl">if you see this,<br/>shit went down</div>
                     </div>
                     <div className="pt-20 px-40">

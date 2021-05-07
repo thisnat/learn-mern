@@ -25,4 +25,27 @@ router.route('/add').post((req, res, next) => {
     })
 })
 
+router.route('/id/:id').get((req, res, next) => {
+    personSchema.findById(req.params.id, (error, data) => {
+        if (error) {
+            return next(error);
+        } else {
+            res.json(data);
+        }
+    })
+})
+
+router.route('/id/:id').put((req, res, next) => {
+    personSchema.findByIdAndUpdate(req.params.id, {
+        $set: req.body
+    }, (error, data) => {
+        if (error) {
+            return next(error);
+        } else {
+            res.json(data);
+            console.log(`${req.params.id} updated successfully`);
+        }
+    })
+})
+
 module.exports = router;

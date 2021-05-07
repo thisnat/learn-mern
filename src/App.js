@@ -6,6 +6,7 @@ import Lab from './views/Lab';
 import Lab2 from './views/Lab2';
 import Lab3 from './views/Lab3';
 import Lab4 from './views/Lab4';
+import Lab4Edit from './views/Lab4edit';
 
 class App extends Component {
     render() {
@@ -18,6 +19,7 @@ class App extends Component {
                         <Route path="/lab2" component={Lab2} />
                         <Route path="/lab3" component={Lab3} />
                         <Route path="/lab4" component={Lab4} />
+                        <Route path="/edit-person/:id" component={Lab4Edit} />
                     </Switch>
                 </Router>
             </div>

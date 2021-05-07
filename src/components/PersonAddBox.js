@@ -21,6 +21,7 @@ const PersonAddBox = () => {
 
     return (
         <div className="bg-white mx-48 mb-5 p-10 shadow-lg">
+            <p className="mb-5 font-thai text-4xl">mongodb crud น่ะครับๆๆๆๆๆ</p>
             <input type="text" 
             className="leading-5 px-4 py-3 border rounded-md focus:outline-none focus:ring focus:border-blue-400"
             placeholder="name"
@@ -40,6 +41,7 @@ const PersonAddBox = () => {
             <br />
 
             <button className="mt-5 px-5 py-2 bg-green-600 text-white" onClick={handleAddBtn} >add</button>
+            <p className="mt-3 font-thai text-xl">*** username ไม่ต้องใส่ก็ได้ไอ่ควาย ***</p>
         </div>
     );
 };
