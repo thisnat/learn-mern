@@ -6,6 +6,9 @@ let personSchema = new Schema({
     name: {
         type: String
     },
+    username: {
+        type: String
+    }
 }, {
     collection: "person"
 })

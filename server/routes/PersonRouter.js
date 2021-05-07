@@ -15,4 +15,14 @@ router.route('/').get((req, res) => {
     })
 })
 
+router.route('/add').post((req, res, next) => {
+    personSchema.create(req.body, (error, data) => {
+        if (error) {
+            return next(error);
+        } else {
+            res.json(data);
+        }
+    })
+})
+
 module.exports = router;
