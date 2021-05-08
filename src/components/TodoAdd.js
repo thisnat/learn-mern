@@ -1,12 +1,29 @@
 import React,{ useState } from 'react';
+import Swal from 'sweetalert2';
 
 const TodoAdd = ({ addToDoItem }) => {
     let [todoItem,setToDoItem] = useState([]);
     
     const handleAddBtn = (e) => {
         e.preventDefault();
-        
-        addToDoItem(todoItem);
+
+        if(todoItem.title === undefined || todoItem.todo === undefined){
+            Swal.fire(
+                'กรอกข้อมูลให้ครบครับพี่',
+                '',
+                'question'
+            )
+        }
+        else if (todoItem.title.length === 0 || todoItem.todo.length === 0){
+            Swal.fire(
+                'กรอกข้อมูลให้ครบครับพี่',
+                '',
+                'question'
+            )
+        }
+        else {
+            addToDoItem(todoItem);
+        }
     }
 
     return (

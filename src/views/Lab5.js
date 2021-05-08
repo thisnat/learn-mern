@@ -3,10 +3,10 @@ import TodoAdd from '../components/TodoAdd';
 import TodoItem from '../components/TodoItem';
 
 const Lab5 = () => {
-    const [todoList,setTodolist] = React.useState([{ title:"default",todo:"this is default to do list" }]);  
+    const [todoList,setTodolist] = React.useState([]);  
 
     const addToDoItem = ({title,todo}) => {
-        const newTodo = [...todoList, { title,todo }];
+        const newTodo = [...todoList, { title,todo}];
         setTodolist(newTodo);
     }
 
@@ -16,7 +16,7 @@ const Lab5 = () => {
             <p className="text-4xl">the coolest to do list ever!!1!!11!</p>
             <TodoAdd addToDoItem={addToDoItem}/>
             {
-                todoList.map((data,i) => (<TodoItem key={i} title={data.title} todo={data.todo} index={i}/>))
+                todoList.map((data,i) => (<TodoItem key={i} title={data.title} todo={data.todo} index={i} />))
             }
         </div>
     );
