@@ -18,8 +18,8 @@ class App extends Component {
                         <Route path="/lab1" component={Lab} />
                         <Route path="/lab2" component={Lab2} />
                         <Route path="/lab3" component={Lab3} />
-                        <Route path="/lab4" component={Lab4} />
-                        <Route path="/edit-person/:id" component={Lab4Edit} />
+                        <Route exact path="/lab4" component={Lab4} />
+                        <Route path="/lab4/edit/:id" component={Lab4Edit} />
                     </Switch>
                 </Router>
             </div>

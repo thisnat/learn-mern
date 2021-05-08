@@ -12,7 +12,7 @@ const Personbox = ({data}) => {
 
     const handleEditBtn = (e) => {
         e.preventDefault();
-        window.location.href = 'http://localhost:3000/edit-person/' + data._id;
+        window.location.href = 'http://localhost:3000/lab4/edit/' + data._id;
     }
 
     return (
