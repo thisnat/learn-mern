@@ -48,4 +48,16 @@ router.route('/id/:id').put((req, res, next) => {
     })
 })
 
+router.route('/id/:id').delete((req, res, next) => {
+    personSchema.findByIdAndRemove(req.params.id, (error, data) => {
+        if (error) {
+            return next(error);
+        } else {
+            res.status(200).json({
+                msg: data
+            })
+        }
+    })
+})
+
 module.exports = router;
