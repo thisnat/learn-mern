@@ -6,7 +6,13 @@ const Lab5 = () => {
     const [todoList,setTodolist] = React.useState([]);  
 
     const addToDoItem = ({title,todo}) => {
-        const newTodo = [...todoList, { title,todo}];
+        let newTodo = [...todoList, { title,todo}];
+        setTodolist(newTodo);
+    }
+
+    const removeToDoItem = (index) => {
+        let newTodo = [...todoList];
+        newTodo.splice(index,1);
         setTodolist(newTodo);
     }
 
@@ -16,7 +22,7 @@ const Lab5 = () => {
             <p className="text-4xl">the coolest to do list ever!!1!!11!</p>
             <TodoAdd addToDoItem={addToDoItem}/>
             {
-                todoList.map((data,i) => (<TodoItem key={i} title={data.title} todo={data.todo} index={i} />))
+                todoList.map((data,i) => (<TodoItem key={i} title={data.title} todo={data.todo} index={i} removeToDoItem={removeToDoItem} />))
             }
         </div>
     );
