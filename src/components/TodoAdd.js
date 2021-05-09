@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 import Swal from 'sweetalert2';
 
 const TodoAdd = ({ addToDoItem }) => {
-    let [todoItem,setToDoItem] = useState([]);
+    let [todoItem,setToDoItem] = useState({});
     
     const handleAddBtn = (e) => {
         e.preventDefault();
