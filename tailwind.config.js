@@ -7,6 +7,9 @@ module.exports = {
         lnw: ['Basteleur'],
         what: ['Mess'],
         thai: ['Kanit']
+      },
+      colors: {
+        za:'#f7f7f7',
       }
     },
   },
