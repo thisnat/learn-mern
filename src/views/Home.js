@@ -18,6 +18,8 @@ class Home extends Component {
                         <div className="font-what text-center text-5xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt numquam eum expedita, voluptate nam odit consectetur.</div>
                         <div className="mt-20 text-center text-4xl">
                             <p className="mb-10 text-7xl underline">lab list</p>
+                            <a href="/cool">avant-garde wannabe</a>
+                            <br/>
                             <a href="/lab1">lab1 - axios get</a>
                             <br/>
                             <a href="/lab2">lab2 - axios get with component used</a>
