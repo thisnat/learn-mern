@@ -36,7 +36,7 @@ class Lab6 extends Component {
         }
 
         return (
-            <div>
+            <div className="bg-za h-full">
                 <div>
                     <p className="text-8xl">github profile search</p>
                     <div className="mt-10">
@@ -49,7 +49,7 @@ class Lab6 extends Component {
                         <Button variant="contained" color="primary" onClick={handleSearchBtn}>search</Button>
                     </div>   
                 </div>
-                <div className="mt-10">
+                <div className="pb-20">
                     {
                         this.state.errMsg
                         ? <p className="text-4xl">{this.state.errMsg}</p>
