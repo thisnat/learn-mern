@@ -9,6 +9,7 @@ import Lab3 from './views/Lab3';
 import Lab4 from './views/Lab4';
 import Lab4Edit from './views/Lab4edit';
 import Lab5 from './views/Lab5'
+import Lab6 from './views/Lab6'
 
 class App extends Component {
     render() {
@@ -24,6 +25,7 @@ class App extends Component {
                         <Route exact path="/lab4" component={Lab4} />
                         <Route path="/lab4/edit/:id" component={Lab4Edit} />
                         <Route path="/lab5" component={Lab5} />
+                        <Route path="/lab6" component={Lab6} />
                     </Switch>
                 </Router>
             </div>

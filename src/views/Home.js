@@ -29,6 +29,8 @@ class Home extends Component {
                             <a href="/lab4">lab4 - mongodb 101</a>
                             <br/>
                             <a href="/lab5">lab5 - yet another to do list</a>
+                            <br/>
+                            <a href="/lab6">lab6 - github profile search</a>
                         </div>
                     </div>
                 </div>
